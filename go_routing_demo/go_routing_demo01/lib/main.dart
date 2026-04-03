@@ -39,20 +39,7 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Details')),
-      body: Center(
-        child: Column(
-          children: [
-            Text('This is the details page.'),
-            SizedBox(height: 30.0),
-            ElevatedButton(
-              // onPressed: () => context.go('/details'),
-              // onPressed: () => context.go('/product/42?filter=popular'),
-              onPressed: () => context.goNamed('home'),
-              child: const Text('Back'),
-            ),
-          ],
-        ),
-      ),
+      body: const Center(child: Text('This is the details screen!')),
     );
   }
 }
